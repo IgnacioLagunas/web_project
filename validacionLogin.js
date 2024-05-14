@@ -9,7 +9,7 @@ document.getElementById("login").addEventListener("submit", function(event) {
     }
     
     if (!validatePassword(password)) {
-      alert("La contraseña debe tener al menos 8 caracteres.");
+      alert("La contraseña debe tener al menos 4 caracteres.");
       event.preventDefault();
       return false;
     }
@@ -24,7 +24,7 @@ document.getElementById("login").addEventListener("submit", function(event) {
   
   function validatePassword(password) {
    
-    return password.length >= 8;
+    return password.length >= 4;
 
 
   }

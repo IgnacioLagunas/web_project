@@ -82,6 +82,10 @@
     font-size: xx-large;
     font-weight: bolder;
 }
+.carousel-caption h5, 
+.carousel-caption p{
+    -webkit-text-stroke: 1px black;
+}
 
 #bestseller_header{
     background-image: url(imágenes/confeti.jpg);
