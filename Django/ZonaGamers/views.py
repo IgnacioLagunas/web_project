@@ -1,5 +1,5 @@
 from django.shortcuts import render
-
+from .models import Usuario
 # Create your views here.
 
 def index(request):
@@ -25,6 +25,18 @@ def formulario(request):
 def producto_spider(request):
     context = {} 
     return render(request,'pages/producto_spider.html',context)
+
+def crud(request):
+    usuarios = Usuario.objects.all()
+
+    context = {
+        "usuarios": usuarios,
+    }
+
+    return render(request, 'pages/crud.html', context)
+
+    
+
 
 
 

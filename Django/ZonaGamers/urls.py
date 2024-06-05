@@ -3,10 +3,12 @@ from . import views
 
 urlpatterns = [
     path ("", views.index,name="index"),
-    path ("", views.index,name="about"),
-    path ("", views.index,name="carrito"),
-    path ("", views.index,name="login"),
-    path ("", views.index,name="formulario"),
-    path ("", views.index,name="producto_spider"),
+    path ("", views.about,name="about"),
+    path ("", views.carrito,name="carrito"),
+    path ("", views.login,name="login"),
+    path ("", views.formulario,name="formulario"),
+    path ("", views.producto_spider,name="producto_spider"),
+    path ("crud",views.crud,name="crud"),
+    
 
 ]
