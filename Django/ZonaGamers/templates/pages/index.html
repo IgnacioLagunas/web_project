@@ -26,7 +26,7 @@
               </form>
               <ul class="navbar-nav ms-auto row">
                 <li class="nav-item">
-                  <a class="nav-link" href="login.html">
+                  <a class="nav-link" href="{% url 'login' %}">
                       <span class="fas fa-user"></span> <!--Icono de usuario-->
                   </a>
               </li>
@@ -55,21 +55,21 @@
                           <tbody>
                               <tr>
                                   <th scope="row">1</th>
-                                  <td><img src="images/chief.webp" alt="Producto 1" style="max-height: 100px; max-width: 90px;"></td>
+                                  <td><img src="{% static 'images/chief.webp'%}" alt="Producto 1" style="max-height: 100px; max-width: 90px;"></td>
                                   <td>$20.00</td>
                                   <td>2</td>
                                   <td>$40.00</td>
                               </tr>
                               <tr>
                                   <th scope="row">2</th>
-                                  <td><img src="images/last.avif" alt="Producto 2" style="max-height: 100px; max-width: 90px;"></td>
+                                  <td><img src="{% static 'images/last.avif'%}" alt="Producto 2" style="max-height: 100px; max-width: 90px;"></td>
                                   <td>$15.00</td>
                                   <td>1</td>
                                   <td>$15.00</td>
                               </tr>
                               <tr>
                                   <th scope="row">3</th>
-                                  <td><img src="images/fc.jpg" alt="Producto 3" style="max-height: 100px; max-width: 90px;"></td>
+                                  <td><img src="{% static 'images/fc.jpg'%}" alt="Producto 3" style="max-height: 100px; max-width: 90px;"></td>
                                   <td>$30.00</td>
                                   <td>3</td>
                                   <td>$90.00</td>
@@ -142,7 +142,7 @@
             </div>
           </div>
           <div class="carousel-item" class="slide">
-            <img src="images/starfield.webp" widt="300" height="500" class="d-block w-100" alt="portada slide 3">
+            <img src="{% static 'images/starfield.webp'%}" widt="300" height="500" class="d-block w-100" alt="portada slide 3">
             <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50">
               <h5>¡ESTRENOS!</h5>
               <p>SUBE A TU NAVE Y DESCUBRE LO QUE EL UNIVERSO TIENE PREPARADO PARA TI</p>
@@ -172,7 +172,7 @@
                         <div class="row mb-3">
                             <div class="col-md-4 col-sm-6"> <!-- Ajuste de columnas -->
                                 <div class="card h-100" style="width: 100%;">
-                                    <img src="images/last.avif" class="card-img-top h-75" alt="...">
+                                    <img src="{% static 'images/last.avif'%}" class="card-img-top h-75" alt="...">
                                     <div class="card-body h-25">
                                         <h5 class="card-title">The Last of Us Part II Remastered - PS5</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -182,7 +182,7 @@
                             </div>
                             <div class="col-md-4 col-sm-6"> <!-- Ajuste de columnas -->
                                 <div class="card" style="width: 100%;">
-                                    <img src="images/sp2.jpg" class="card-img-top" alt="...">
+                                    <img src="{% static 'images/sp2.jpg'%}" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">Spider-Man 2 - PS5</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -192,7 +192,7 @@
                             </div>
                             <div class="col-md-4 col-sm-6"> <!-- Ajuste de columnas -->
                                 <div class="card" style="width: 100%;">
-                                    <img src="images/fc.jpg" class="card-img-top" alt="...">
+                                    <img src="{% static 'images/fc.jpg'%}" class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">FC24 - XBOX</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -214,16 +214,16 @@
     <div class="container-fluid">
       <div class="row" id="fila_circulos">
           <div class="col-md-3 col-sm-6">
-              <img src="images/xboxlogo2.jpg" class="imagen_redondeada_2 img-fluid" alt="logo 1">
+              <img src="{% static 'images/xboxlogo2.jpg'%}" class="imagen_redondeada_2 img-fluid" alt="logo 1">
           </div>
           <div class="col-md-3 col-sm-6">
-              <a href="catalogo.html"><img src="images/PlayStation_App_Icon.jpg" class="imagen_redondeada_2 img-fluid" alt="logo 2"></a>
+              <a href="catalogo.html"><img src="{%static 'images/PlayStation_App_Icon.jpg'%}" class="imagen_redondeada_2 img-fluid" alt="logo 2"></a>
           </div>
           <div class="col-md-3 col-sm-6">
-              <img src="images/nintendo.jpg" class="imagen_redondeada_2 img-fluid" alt="logo 3">
+              <img src="{% static 'images/nintendo.jpg'%}" class="imagen_redondeada_2 img-fluid" alt="logo 3">
           </div>
           <div class="col-md-3 col-sm-6">
-              <img src="images/pclogo.jpg" class="imagen_redondeada_2 img-fluid" alt="logo 4">
+              <img src="{% static 'images/pclogo.jpg'%}" class="imagen_redondeada_2 img-fluid" alt="logo 4">
           </div>
       </div>
   </div>
@@ -253,9 +253,9 @@
           <div class="card">
             <div class="card-body" id="footers">
               <h5 class="card-title" style="color: blueviolet;">Nuestros Medios de Pago</h5>
-              <img src="images/webpay-plus-integracion.png" style="max-width: 100%; height: auto;">
-              <img src="images/mach.jpg" style="max-width: 100%; height: auto;">
-              <img src="images/kippu.png" style="max-width: 100%; height: auto;">
+              <img src="{% static 'images/webpay-plus-integracion.png'%}" style="max-width: 100%; height: auto;">
+              <img src="{% static 'images/mach.jpg'%}" style="max-width: 100%; height: auto;">
+              <img src="{% static 'images/kippu.png'%}" style="max-width: 100%; height: auto;">
             </div>
           </div>
         </div>

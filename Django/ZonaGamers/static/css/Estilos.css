@@ -9,7 +9,7 @@
 
 #body_index{
     background-color: rgb(210, 210, 210);
-    background-image: url(imágenes/fondomario.jpg);
+    background-image: url(../images/fondomario.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,7 +19,7 @@
 
 #body_registro{
 
-    background-image: url(imágenes/fondo3.png);
+    background-image: url(../images/fondo3.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -27,7 +27,7 @@
 }
 
 #body_login{
-    background-image: url(imágenes/fondo3.png);
+    background-image: url(../images/fondo3.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -35,7 +35,7 @@
 }
 
 #body_carrito{
-    background-image: url(imágenes/fondo3.png);
+    background-image: url(../images/fondo3.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -43,7 +43,7 @@
 }
 
 #body_about{
-    background-image: url(imágenes/fondo3.png);
+    background-image: url(../images/fondo3.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -51,7 +51,7 @@
 }
 
 #body_producto{
-    background-image: url(imágenes/fondo3.png);
+    background-image: url(../images/fondo3.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -88,7 +88,7 @@
 }
 
 #bestseller_header{
-    background-image: url(imágenes/confeti.jpg);
+    background-image: url(../images/confeti.jpg);
     font-weight: bold;
     color: whitesmoke;
     font-family: monospace;

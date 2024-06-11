@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito de Compras</title>
+    {% load static %}
     <link rel="stylesheet" href="{% static'Estilos.css'%}">
     <link rel="stylesheet" href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'%}">
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
@@ -13,7 +15,7 @@
     <div>
         <nav class="navbar bg-body-tertiary">
             <div class="container-fluid " id="navbar1" >
-              <a class="navbar-brand" href="index.html"><img src="imágenes/logo 2.jpg" class="imagen_redondeada"></a>
+              <a class="navbar-brand" href="index.html"><img src="{% static 'imágenes/logo 2.jpg'%}" class="imagen_redondeada"></a>
               <form class="d-flex mx-auto w-50" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Search</button>
@@ -50,21 +52,21 @@
             <tbody>
                 <tr>
                     <th scope="row">1</th>
-                    <td><img src="imágenes/chief.webp" alt="Producto 1" style="max-height: 100px; max-width: 90px;"></td>
+                    <td><img src=" {% static 'imágenes/chief.webp'%}" alt="Producto 1" style="max-height: 100px; max-width: 90px;"></td>
                     <td>$20.00</td>
                     <td>2</td>
                     <td>$40.00</td>
                 </tr>
                 <tr>
                     <th scope="row">2</th>
-                    <td><img src="imágenes/last.avif" alt="Producto 2" style="max-height: 100px; max-width: 90px;"></td>
+                    <td><img src="{% static 'imágenes/last.avif'%}" alt="Producto 2" style="max-height: 100px; max-width: 90px;"></td>
                     <td>$15.00</td>
                     <td>1</td>
                     <td>$15.00</td>
                 </tr>
                 <tr>
                     <th scope="row">3</th>
-                    <td><img src="imágenes/fc.jpg" alt="Producto 3" style="max-height: 100px; max-width: 90px;"></td>
+                    <td><img src="{% static 'imágenes/fc.jpg'%}" alt="Producto 3" style="max-height: 100px; max-width: 90px;"></td>
                     <td>$30.00</td>
                     <td>3</td>
                     <td>$90.00</td>
