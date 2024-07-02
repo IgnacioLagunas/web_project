@@ -1,10 +1,20 @@
 from django.shortcuts import render
-from .models import Usuario
+from django.urls import reverse
+from .forms import UsuarioForm, ProductoForm, PedidoForm
+from .models import Usuario, Producto, Pedido
 # Create your views here.
+# Genera la URL para la vista 'detalle_hotel' con id=1
+#rl = reverse('index', args=[1])
+
+# Imprime la URL generada
+#print(url)
 
 def index(request):
-    context = {} 
+    context = {
+        "user": ""
+    } 
     return render(request,'pages/index.html',context)
+    
 
 def about(request):
     context = {} 
@@ -12,7 +22,7 @@ def about(request):
 
 def carrito(request):
     context = {} 
-    return render(request,'pages/carrito.html',context)
+    return render(request, 'pages/carrito.html')
 
 def login(request):
     context = {} 
@@ -28,12 +38,10 @@ def producto_spider(request):
 
 def crud(request):
     usuarios = Usuario.objects.all()
-
     context = {
         "usuarios": usuarios,
     }
-
-    return render(request, 'pages/crud.html', context)
+    return render(request, "pages/crud.html", context)
 
     
 

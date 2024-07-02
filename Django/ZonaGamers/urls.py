@@ -8,7 +8,5 @@ urlpatterns = [
     path ("login", views.login,name="login"),
     path ("formulario", views.formulario,name="formulario"),
     path ("producto_spiders", views.producto_spider,name="producto_spider"),
-    path ("crud",views.crud,name="crud"),
-    
-
+    path ("crud", views.crud,name="crud"), 
 ]
