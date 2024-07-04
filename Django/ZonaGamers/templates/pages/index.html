@@ -79,7 +79,7 @@
                       <div class="text-right">
                           <h4>Total: $145.00</h4>
                           <button class="btn btn-primary">Pagar</button>
-                          <a class="btn btn-primary" href="carrito.html">Ir a carrito</a>
+                          <<a class="nav-link" href="{% url "carrito" %}">
                       </div>
                   </div>
                   </div>
@@ -186,7 +186,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title">Spider-Man 2 - PS5</h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="producto_spider.html" class="btn btn-primary">Ver Producto</a>
+                                        <a href="{% url "producto_spider" %}" class="btn btn-primary">Ver Producto</a>
                                     </div>
                                 </div>
                             </div>
@@ -217,7 +217,8 @@
               <img src="{% static 'images/xboxlogo2.jpg'%}" class="imagen_redondeada_2 img-fluid" alt="logo 1">
           </div>
           <div class="col-md-3 col-sm-6">
-              <a href="catalogo.html"><img src="{%static 'images/PlayStation_App_Icon.jpg'%}" class="imagen_redondeada_2 img-fluid" alt="logo 2"></a>
+            <a href="{% url 'catalogo' %}"><img src="{% static 'images/PlayStation_App_Icon.jpg' %}" class="imagen_redondeada_2 img-fluid" alt="logo 2"></a>
+
           </div>
           <div class="col-md-3 col-sm-6">
               <img src="{% static 'images/nintendo.jpg'%}" class="imagen_redondeada_2 img-fluid" alt="logo 3">
@@ -233,33 +234,32 @@
     <!--FINAL-->
     <br><br>
     <div class="row">
-        <div class="col-sm-6 mb-3 mb-sm-0">
-          <div class="card">
-            <div class="card-body" id="footers">
-              <h5 class="card-title" style="color: blueviolet;">CONTACTO</h5>
-              <ul>
-                <li>Contáctanos a través de Redes sociales o al mail servicioalcliente@gamers.cl.</li>
-                <li>HORARIO DE ATENCIÓN TIENDA WEB
-                    Lunes a Viernes:
-                    De 08:00 AM a 17:30</li>
-                <li>Acerca de <a href="about.html">Nosotros</a></li>
-              </ul>
-              
-              
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 m">
-          <div class="card">
-            <div class="card-body" id="footers">
-              <h5 class="card-title" style="color: blueviolet;">Nuestros Medios de Pago</h5>
-              <img src="{% static 'images/webpay-plus-integracion.png'%}" style="max-width: 100%; height: auto;">
-              <img src="{% static 'images/mach.jpg'%}" style="max-width: 100%; height: auto;">
-              <img src="{% static 'images/kippu.png'%}" style="max-width: 100%; height: auto;">
-            </div>
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card d-flex">
+          <div class="card-body" id="footers">
+            <h5 class="card-title" style="color: blueviolet;">CONTACTO</h5>
+            <ul>
+              <li>Contáctanos a través de Redes sociales o al mail servicioalcliente@gamers.cl.</li>
+              <li>HORARIO DE ATENCIÓN TIENDA WEB
+                Lunes a Viernes:
+                De 08:00 AM a 17:30</li>
+                <a href="{% url "about" %}" class="btn btn-primary">NOSOTROS</a>
+            </ul>
           </div>
         </div>
       </div>
+      <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card d-flex">
+          <div class="card-body" id="footers">
+            <h5 class="card-title" style="color: blueviolet;">Nuestros Medios de Pago</h5>
+            <img src="{% static 'images/webpay-plus-integracion.png'%}" style="max-width: 100%; height: auto;">
+            <img src="{% static 'images/mach.jpg'%}" style="max-width: 100%; height: auto;">
+            <img src="{% static 'images/kippu.png'%}" style="max-width: 100%; height: auto;">
+          </div>
+        </div>
+      </div>
+    </div>
+    
 </body>
 <script src="{% static 'js/bootstrap.bundle.min.js'%}"></script>
 </html>

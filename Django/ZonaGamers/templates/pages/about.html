@@ -15,7 +15,7 @@
     <div>
         <nav class="navbar bg-body-tertiary">
             <div class="container-fluid " id="navbar1" >
-              <a class="navbar-brand" href="index.html"><img src="{% static 'imágenes/logo 2.jpg'%}" class="imagen_redondeada"></a>
+              <a class="navbar-brand" href="{% url "index" %}"><img src="{% static 'imágenes/logo 2.jpg'%}" class="imagen_redondeada"></a>
               <form class="d-flex mx-auto w-50" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Search</button>
@@ -92,7 +92,7 @@
       
       
       
-  {% load js %}
+ 
  <script src="js/bootstrap.bundle.min.js"></script>   
 </body>
 </html>

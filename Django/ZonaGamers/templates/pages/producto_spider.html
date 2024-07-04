@@ -13,24 +13,24 @@
 <body id="body_producto">
 
   <!--Navbar-->
-  <div>
-    <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid " id="navbar1" >
-          <a class="navbar-brand" href="index.html"><img src="{% static 'imágenes/logo 2.jpg'%}" class="imagen_redondeada"></a>
-          <form class="d-flex mx-auto w-50" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-          <ul class="navbar-nav ms-auto">
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid " id="navbar1" >
+      <a href="{% url 'index' %}"><img src="{% static 'images/PlayStation_App_Icon.jpg' %}" class="imagen_redondeada_2 img-fluid" alt="logo 2" style="max-width: 50px;"></a>
+
+
+      <form class="d-flex mx-auto w-50" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+          <ul class="navbar-nav ms-auto row">
             <li class="nav-item">
-              <a class="nav-link" href="login.html" style="font-size: medium;">
-                  <span class="fas fa-user"></span> Iniciar Sesión <!-- Icono de usuario -->
+              <a class="nav-link custom-nav-link" href="{% url 'login' %}">
+                  <span class="fas fa-user"></span> <!--Icono de usuario-->
               </a>
           </li>
             <li class="nav-item">
-                <a class="nav-link" href="carrito.html">
-                    <span class="fas fa-shopping-cart" style="width: 30px;"></span>Carrito de compras
-                    
+              <a class="nav-link custom-nav-link" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                <span class="fas fa-shopping-cart"></span><!--Icono de carrito-->
                 </a>
             </li>
         </ul>
@@ -42,22 +42,22 @@
    <div>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav row-cols-md-1">
               <li class="nav-item" style="background-color: green">
-                <a class="nav-link" href="#"><span style="color: rgb(16, 212, 16); ">Xbox</span></a>
+                <a class="nav-link" href="#"><span style="color: rgb(16, 212, 16);">Xbox</span></a>
               </li>
               <li class="nav-item" style="background-color: lightblue">
-                <a class="nav-link" href="#"><span style="color: blue; ;">PlayStation</span></a>
+                <a class="nav-link" href="#"><span style="color: blue;">PlayStation</span></a>
               </li>
               <li class="nav-item" style="background-color: lightcoral">
-                <a class="nav-link" href="#"><span style="color: red; ">Nintendo</span></a>
+                <a class="nav-link" href="#"><span style="color: red;">Nintendo</span></a>
               </li>
               <li class="nav-item" style="background-color: lightyellow">
-                <a class="nav-link" href="#"><span style="color: goldenrod; ">PC</span></a>
+                <a class="nav-link" href="#"><span style="color: goldenrod;">PC</span></a>
               </li>
             </ul>
           </div>
@@ -122,6 +122,6 @@
 
 
 </body>
-{% load js %}
+
   <script src="js/bootstrap.bundle.min.js"></script>
 </html> 

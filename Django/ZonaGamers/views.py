@@ -20,6 +20,10 @@ def about(request):
     context = {} 
     return render(request,'pages/about.html',context)
 
+def catalogo(request):
+    context = {} 
+    return render(request,'pages/catalogo.html',context)
+
 def carrito(request):
     context = {} 
     return render(request, 'pages/carrito.html')
